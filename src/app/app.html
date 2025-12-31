@@ -1,1 +1,22 @@
-<h1>Hola 2026</h1>
+
+<div class="principal">
+<button matIconButton [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Home</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>Menu</mat-icon>
+    <span>Contact</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>
+</div>
+
+<h1 style="color: blue; font-size: larger; display: flex; justify-content: center; align-content: center;">Bienvenidos</h1>
